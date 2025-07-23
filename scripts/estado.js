@@ -1,4 +1,4 @@
-module.exports = (robot) => {
+module.exports = function(robot) {
   robot.router.get('/estado', (req, res) => {
     res.send('El backend está corriendo y saludable');
   });
