@@ -10,7 +10,8 @@ app.post('/hubot/slack/events', (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(4000, () => {
-  console.log('Servidor de verificación corriendo en puerto 4000');
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
+  console.log(`Servidor de verificación corriendo en puerto ${port}`);
 });
- 
